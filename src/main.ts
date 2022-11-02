@@ -25,7 +25,7 @@ const app = createApp(App)
 
 app
    .use(router)
-   .use(IonicVue, { mode: 'ios' })
+   .use(IonicVue /*, { mode: 'md' } */)
 
 router.isReady().then(() => {
    app.mount('#app');
