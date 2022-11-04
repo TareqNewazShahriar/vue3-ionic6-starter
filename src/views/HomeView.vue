@@ -8,13 +8,13 @@ import { IonButton, IonToggle, IonInput, IonItem, IonLabel } from '@ionic/vue';
       <HelloWorld msg="You did it!" />
       <br>
       <br>
-      <h5>Ionic Components:</h5>
+      <h5>Some Ionic Components:</h5>
       <ion-button>Default</ion-button>
       <br/>
       <ion-toggle color="medium"></ion-toggle>
       <br/>
       <ion-item fill="solid">
-         <ion-label position="floating">Outline input</ion-label>
+         <ion-label position="floating">Input Label</ion-label>
          <ion-input mode="ios" placeholder="Enter text"></ion-input>
       </ion-item>
    </main>
