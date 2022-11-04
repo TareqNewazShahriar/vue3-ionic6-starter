@@ -4,7 +4,7 @@ import { IonButton, IonToggle, IonInput, IonItem, IonLabel } from '@ionic/vue';
 </script>
    
 <template>
-   <main>
+   <div>
       <HelloWorld msg="You did it!" />
       <br>
       <br>
@@ -17,5 +17,5 @@ import { IonButton, IonToggle, IonInput, IonItem, IonLabel } from '@ionic/vue';
          <ion-label position="floating">Input Label</ion-label>
          <ion-input mode="ios" placeholder="Enter text"></ion-input>
       </ion-item>
-   </main>
+   </div>
 </template>
