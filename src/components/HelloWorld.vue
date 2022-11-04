@@ -22,8 +22,11 @@ fetch('https://yesno.wtf/api')
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
 	<div>
-		<div>answer: {{ yesno.answer }}</div>
-		<div><img v-bind:src="yesno.image || 'javascript:void(0)'" alt="yes/no gif" /></div>
+      <h5>Response from HTTP request:</h5>
+		<div>answer: {{ JSON.stringify(yesno) }}</div>
+		<div>
+         <!-- <img v-bind:src="yesno.image || 'javascript:void(0)'" alt="yes/no gif" /> -->
+      </div>
 	</div>
   </div>
 </template>

@@ -1,18 +1,21 @@
-<script lang="ts">
+<script setup lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'
-import { IonButton, IonToggle } from '@ionic/vue';
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-   components: { HelloWorld, IonButton, IonToggle }
-});
+import { IonButton, IonToggle, IonInput, IonItem, IonLabel } from '@ionic/vue';
 </script>
-
+   
 <template>
    <main>
-      <ion-button>Default</ion-button>
-      <ion-toggle color="medium"></ion-toggle>
-      <hr>
       <HelloWorld msg="You did it!" />
+      <br>
+      <br>
+      <h5>Ionic Components:</h5>
+      <ion-button>Default</ion-button>
+      <br/>
+      <ion-toggle color="medium"></ion-toggle>
+      <br/>
+      <ion-item fill="solid">
+         <ion-label position="floating">Outline input</ion-label>
+         <ion-input mode="ios" placeholder="Enter text"></ion-input>
+      </ion-item>
    </main>
 </template>
